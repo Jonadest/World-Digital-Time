@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background: linear-gradient(133deg,#81e414,#24c235,#ecf8e1,#b733b2,white);
+  background-size: 300% 300%;
+  animation: gradient-animation 20s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+    
+}
+
+body{
+    background: url("https://images7.alphacoders.com/133/thumbbig-1338126.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.container-fluid{
+   background:  rgba(0, 0, 0, 0.308);   
+}
+.container-fluid{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.local-time{
+    color: #fff;
+    text-align: center;
+    
+    
+    
+}
+
+.local-time h2{
+    font-size: 4rem;
+    text-shadow: -2px 4px 2px rgba(0,0,0,0.6);
+}
+
+.local-time h5{
+    padding-top: 50px;
+    font-size: 2rem;
+    text-shadow: -2px 4px 2px rgba(0,0,0,0.6);
+}
+
+
+
+#jona p{
+    font-size: 2rem;
+}
+
+.clock-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+/* .clock{
+    backdrop-filter: blur(5px);
+    display: flex;
+    padding: 30px;
+    background-color: #ffffff69;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 0 auto;
+    flex-direction: column;
+    box-shadow: -1px 0px 14px 7px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 0px 14px 7px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 0px 14px 7px rgba(0,0,0,0.75);
+border: 2px solid #fff;
+}
+ */
+.clock{
+    text-align: center;
+    backdrop-filter: blur(5px);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    background-color: #ffffff69;
+    gap: 20px;
+    border-radius: 5px;
+    place-items: center;
+    
+    margin: 0 auto;
+    box-shadow: -1px 0px 14px 7px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 0px 14px 7px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 0px 14px 7px rgba(0,0,0,0.75);
+border: 2px solid #fff;
+}
+
+
+
+
+
+p{
+    text-align: center;
+}
+
+#hr{
+    color: green;
+}
+
+@media  (max-width: 400px){
+    .clock{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .local-time h2{
+        font-size: 32px;
+       
+    }
+
+    h5{
+        
+    }
+}
